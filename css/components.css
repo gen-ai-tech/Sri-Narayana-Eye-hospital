@@ -550,12 +550,12 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 370px; /* Increased further to make menu bar wider */
-    max-width: 95vw; /* Ensure it doesn't overflow on small screens */
+    width: 330px; /* Slightly wider */
+    max-width: 95vw; 
     height: auto;
     background-color: #ffffff;
     flex-direction: column;
-    padding: 1.25rem 1.5rem 2rem; /* Slightly increased top/bottom padding */
+    padding: 1.25rem 1.5rem 4rem; /* Increased bottom padding (was 2rem) for more vertical length */
     gap: 1.25rem;
     border-radius: 16px 0 0 16px;
     box-shadow: -4px 10px 24px rgba(0, 0, 0, 0.12);
