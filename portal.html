@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Portal | Sri Narayana Eye Hospital & Cornea Centre</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-eye" style="color: var(--secondary-color);"></i>
+        Sri Narayana Eye Hospital
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="portal.html" style="color: var(--primary-color);">Patient Portal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <i class="fa-solid fa-bars mobile-toggle" id="mobileToggle"></i>
+    </div>
+  </header>
+
+  <section class="container" style="padding: 4rem 1.5rem;">
+    <div class="section-header">
+      <h2>Patient Portal & Resources</h2>
+      <p>Everything you need for a smooth and comfortable visit.</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card" style="text-align: center;">
+        <i class="fa-regular fa-file-lines service-icon" style="margin: 0 auto 1rem;"></i>
+        <h3>Patient Forms</h3>
+        <p>Save time by filling out your intake forms before you arrive.</p>
+        <button class="btn btn-outline" style="margin-top: 1rem;">Download Forms</button>
+      </div>
+      <div class="service-card" style="text-align: center; border: 2px solid var(--secondary-color);">
+        <i class="fa-solid fa-stethoscope service-icon" style="margin: 0 auto 1rem;"></i>
+        <h3>Virtual Eye-Health Triage</h3>
+        <p>Take our quick 3-minute quiz to understand your symptoms and get recommendations.</p>
+        <button class="btn btn-primary" id="startQuizBtn" style="margin-top: 1rem;">Start Quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Modal -->
+  <div class="modal-overlay" id="quizModal">
+    <div class="modal-content">
+      <i class="fa-solid fa-xmark modal-close" id="closeQuizBtn"></i>
+      
+      <div id="quizContainer">
+        <!-- Question 1 -->
+        <div class="quiz-question active" id="q1">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What is your primary eye concern?</h3>
+          <p style="color: var(--text-light);">Select the symptom that bothers you the most.</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-next="q2_vision">Blurry or cloudy vision</div>
+            <div class="quiz-option" data-next="q2_pain">Eye pain, redness, or severe dryness</div>
+            <div class="quiz-option" data-next="result_routine">Just need a routine check-up for glasses/contacts</div>
+          </div>
+        </div>
+
+        <!-- Question 2 (Vision) -->
+        <div class="quiz-question" id="q2_vision">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">When is the blurriness worse?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" data-next="result_cataract">It's constantly blurry/cloudy, especially at night (glare from headlights)</div>
+            <div class="quiz-option" data-next="result_routine">Only when reading or looking at screens</div>
+            <div class="quiz-option" data-next="result_cornea">My vision is distorted, and my prescription changes constantly</div>
+          </div>
+        </div>
+
+        <!-- Question 2 (Pain) -->
+        <div class="quiz-question" id="q2_pain">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">How severe is the discomfort?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" data-next="result_emergency">Sudden, severe pain with vision loss (Seek immediate care!)</div>
+            <div class="quiz-option" data-next="result_cornea">Gritty feeling, constant dryness, or sensitivity to light</div>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="quiz-question" id="result_routine">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-glasses" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--primary-color);">General Eye Exam Recommended</h3>
+            <p style="margin-bottom: 1.5rem;">Based on your answers, a routine comprehensive eye exam should be your next step to update your prescription and check overall eye health.</p>
+            <a href="contact.html" class="btn btn-primary">Book General Checkup</a>
+          </div>
+        </div>
+
+        <div class="quiz-question" id="result_cataract">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-eye" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--primary-color);">Cataract Evaluation Recommended</h3>
+            <p style="margin-bottom: 1.5rem;">Your symptoms suggest you might be developing cataracts. We recommend booking a specialized evaluation with our team.</p>
+            <a href="contact.html" class="btn btn-primary">Book Cataract Consultation</a>
+          </div>
+        </div>
+
+        <div class="quiz-question" id="result_cornea">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-microscope" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--primary-color);">Advanced Cornea Consultation</h3>
+            <p style="margin-bottom: 1.5rem;">Your symptoms align with potential corneal issues (like Keratoconus or severe dry eye). Please book a consultation at our Advanced Cornea Centre.</p>
+            <a href="contact.html" class="btn btn-primary">Book Cornea Consultation</a>
+          </div>
+        </div>
+
+        <div class="quiz-question" id="result_emergency">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-truck-medical" style="font-size: 3rem; color: var(--error); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--error);">Seek Immediate Medical Attention</h3>
+            <p style="margin-bottom: 1.5rem;">Sudden vision loss accompanied by severe pain is a medical emergency. Please call us immediately or visit the nearest emergency room.</p>
+            <a href="tel:09940814568" class="btn btn-primary" style="background-color: var(--error); border-color: var(--error);">Call Now: 099408 14568</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sri Narayana Eye Hospital & Cornea Centre. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
