@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Sri Narayana Eye Hospital & Cornea Centre</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: var(--border-radius);
+      font-family: var(--font-family);
+    }
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-eye" style="color: var(--secondary-color);"></i>
+        Sri Narayana Eye Hospital
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="portal.html">Patient Portal</a>
+        <a href="contact.html" style="color: var(--primary-color);">Contact</a>
+      </nav>
+      <i class="fa-solid fa-bars mobile-toggle" id="mobileToggle"></i>
+    </div>
+  </header>
+
+  <section class="container" style="padding: 4rem 1.5rem;">
+    <div class="contact-grid">
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Book an Appointment</h2>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">Fill out the form below and our team will get back to you shortly to confirm your time.</p>
+        
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="patientName" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" class="form-control" id="patientPhone" placeholder="099408 14568" required>
+          </div>
+          <div class="form-group">
+            <label>Reason for Visit</label>
+            <select class="form-control" id="visitReason" required>
+              <option>General Eye Checkup</option>
+              <option>Cornea Consultation</option>
+              <option>Surgery Inquiry</option>
+            </select>
+          </div>
+          <div id="formMessage" style="display: none; margin-bottom: 1rem; padding: 1rem; border-radius: var(--border-radius); font-weight: 500;"></div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+        </form>
+      </div>
+      
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Our Location</h2>
+        <div style="background: var(--bg-secondary); padding: 2rem; border-radius: var(--border-radius); margin-bottom: 2rem;">
+          <h4 style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> Address</h4>
+          <p>319, Perumal Malai Rd<br>Salem, Tamil Nadu 636004</p>
+          <p style="color: var(--secondary-color); font-size: 0.9rem; margin-top: 0.5rem;">* Behind Ans rountana autostand</p>
+          
+          <h4 style="margin-bottom: 0.5rem; margin-top: 1.5rem;"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> Phone</h4>
+          <p>099408 14568</p>
+        </div>
+        
+        <!-- Mock Map Placeholder -->
+        <div style="width: 100%; height: 300px; background-color: #e5e7eb; border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; color: #6b7280;">
+          [ Google Maps Embed Here ]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sri Narayana Eye Hospital & Cornea Centre. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

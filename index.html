@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Narayana Eye Hospital & Cornea Centre | Salem</title>
+  
+  <!-- Google Fonts: DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" style="display: flex; align-items: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2qvjPjTmK_gN9Ayjjvd78zPd8Poi3hGSGmLmRFPlLg&s=10" alt="Logo" style="height: 60px; margin-right: 8px; mix-blend-mode: multiply;">
+        Sri Narayana Eye Hospital
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#highlights">Why Us</a>
+        <a href="#contact">Contact</a>
+        <div class="mobile-book-btn">
+          <a href="#contact" class="btn btn-primary" style="width: 100%; display: block; text-align: center; padding: 0.75rem 1rem;">Book Appointment</a>
+        </div>
+      </nav>
+
+      <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn btn-primary desktop-book-btn" style="white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.9rem;">Book Appointment</a>
+        <i class="fa-solid fa-bars mobile-toggle" id="mobileToggle"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Vision Care You Can Trust.<br><span style="color: #e0b3ff;">Advanced Cornea Treatment</span> You Deserve.</h1>
+        <p style="margin-bottom: 2rem; font-size: 1.1rem; opacity: 0.9;">Expert ophthalmology care with state-of-the-art technology. Serving Salem &amp; Tamil Nadu with compassion since day one.</p>
+        <div class="hero-buttons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn" style="background: #fff; color: var(--primary-color); font-weight: 700; padding: 0.85rem 2rem;">
+            <i class="fa-regular fa-calendar-check"></i> Book Appointment
+          </a>
+          <a href="#services" class="btn" style="background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.7); padding: 0.85rem 2rem;">
+            <i class="fa-solid fa-eye"></i> Our Services
+          </a>
+        </div>
+        <!-- Stats Strip -->
+        <div style="display: flex; gap: 2.5rem; margin-top: 3rem; flex-wrap: wrap;">
+          <div>
+            <div style="font-size: 2rem; font-weight: 800; color: #fff;">5,000+</div>
+            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.75);">Patients Treated</div>
+          </div>
+          <div style="width: 1px; background: rgba(255,255,255,0.25);"></div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 800; color: #fff;">15+</div>
+            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.75);">Years Experience</div>
+          </div>
+          <div style="width: 1px; background: rgba(255,255,255,0.25);"></div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 800; color: #fff;">5.0 ★</div>
+            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.75);">Google Rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero_doctor_patient.png" alt="Doctor examining patient" style="border-radius: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.3);">
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Why Us Section -->
+  <section class="about-section" id="about" style="padding: 5rem 0;">
+    <div class="container split-section">
+      <div class="split-image">
+        <img src="images/hospital_facility.png" alt="Modern clinic and caring doctor">
+      </div>
+      <div class="split-content">
+        <h2>Modern Medicine with a Compassionate Touch</h2>
+        <p>At Sri Narayana Eye Hospital & Cornea Centre, our mission is simple: to protect and enhance the gift of sight through innovative medical treatments and a deeply empathetic approach to patient care.</p>
+        <p>As a leading center for advanced cornea treatments in Tamil Nadu, we bridge the gap between cutting-edge technology and accessible healthcare. We are proudly an inclusive, welcoming, and LGBTQ+ friendly space where every patient receives the standard of personalized care they deserve.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section" id="services" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Specialized Services</h2>
+        <p>From routine check-ups to advanced surgical procedures, we offer comprehensive eye care solutions tailored to your unique needs.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card" style="padding-top: 1rem;">
+          <img src="images/general_ophthalmology.png" alt="General Ophthalmology" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3>General Ophthalmology</h3>
+          <ul style="list-style-type: none; padding: 0; color: var(--text-light);">
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Comprehensive Eye Exams</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Cataract Screening & Surgery</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Glaucoma Management</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Diabetic Eye Care</li>
+          </ul>
+        </div>
+        
+        <div class="service-card" style="padding-top: 1rem;">
+          <img src="images/cornea_care.png" alt="Advanced Cornea Care" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3>Advanced Cornea Centre</h3>
+          <ul style="list-style-type: none; padding: 0; color: var(--text-light);">
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Corneal Transplants</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Keratoconus Treatment</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Severe Dry Eye Clinic</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 8px;"></i> Refractive Surgery Solutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hospital Highlights -->
+  <section class="container" id="highlights" style="padding: 5rem 1.5rem;">
+    <div class="section-header">
+      <h2>Why Choose Sri Narayana?</h2>
+      <p>We combine world-class technology with compassionate care to protect your vision.</p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <div style="background: var(--white); padding: 2.5rem 1.5rem; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); text-align: center; border-bottom: 4px solid var(--primary-color);">
+        <i class="fa-solid fa-microscope" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1.5rem;"></i>
+        <h3 style="margin-bottom: 1rem;">Advanced Technology</h3>
+        <p style="color: var(--text-light);">Equipped with state-of-the-art diagnostic and surgical machinery for precise cornea and cataract treatments.</p>
+      </div>
+      
+      <div style="background: var(--white); padding: 2.5rem 1.5rem; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); text-align: center; border-bottom: 4px solid var(--primary-color);">
+        <i class="fa-solid fa-user-doctor" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1.5rem;"></i>
+        <h3 style="margin-bottom: 1rem;">Expert Specialists</h3>
+        <p style="color: var(--text-light);">Our team of highly experienced ophthalmologists are leaders in their fields, dedicated to restoring your vision safely.</p>
+      </div>
+      
+      <div style="background: var(--white); padding: 2.5rem 1.5rem; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); text-align: center; border-bottom: 4px solid var(--primary-color);">
+        <i class="fa-solid fa-hand-holding-medical" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1.5rem;"></i>
+        <h3 style="margin-bottom: 1rem;">Cashless Insurance</h3>
+        <p style="color: var(--text-light);">We partner with major health insurance providers to offer hassle-free, cashless hospitalization for all major surgeries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" style="background-color: var(--bg-secondary); padding: 5rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us & Appointments</h2>
+        <p>Get in touch with us to schedule your visit or ask any questions.</p>
+      </div>
+      <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+        <div>
+          <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Book an Appointment</h3>
+          <form id="appointmentForm">
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+              <input type="text" class="form-control" id="patientName" placeholder="John Doe" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: var(--border-radius); font-family: var(--font-family);">
+            </div>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone Number</label>
+              <input type="tel" class="form-control" id="patientPhone" placeholder="099408 14568" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: var(--border-radius); font-family: var(--font-family);">
+            </div>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Reason for Visit</label>
+              <select class="form-control" id="visitReason" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: var(--border-radius); font-family: var(--font-family);">
+                <option>General Eye Checkup</option>
+                <option>Cornea Consultation</option>
+                <option>Surgery Inquiry</option>
+              </select>
+            </div>
+            <div id="formMessage" style="display: none; margin-bottom: 1rem; padding: 1rem; border-radius: var(--border-radius); font-weight: 500;"></div>
+            <button type="submit" class="btn btn-primary" id="submitBtn" style="display: inline-block;">Submit Request</button>
+          </form>
+        </div>
+        
+        <div>
+          <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Our Location</h3>
+          <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); margin-bottom: 2rem; box-shadow: var(--shadow-sm);">
+            <h4 style="margin-bottom: 0.5rem; color: var(--text-dark);"><i class="fa-solid fa-location-dot" style="margin-right: 8px; color: var(--secondary-color);"></i> Address</h4>
+            <p style="color: var(--text-light);">319, Perumal Malai Rd<br>Salem, Tamil Nadu 636004</p>
+            
+            <h4 style="margin-bottom: 0.5rem; margin-top: 1.5rem; color: var(--text-dark);"><i class="fa-solid fa-phone" style="margin-right: 8px; color: var(--secondary-color);"></i> Phone</h4>
+            <p style="color: var(--text-light);">099408 14568</p>
+          </div>
+          
+          <!-- Google Maps Embed -->
+          <div style="width: 100%; height: 250px; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-sm);">
+            <iframe src="https://maps.google.com/maps?q=Sri%20Narayana%20Eye%20Hospital%20%26%20Cornea%20Centre,%20319,%20Perumal%20Malai%20Rd,%20Salem,%20Tamil%20Nadu%20636004&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Modal -->
+  <div class="modal-overlay" id="quizModal">
+    <div class="modal-content">
+      <i class="fa-solid fa-xmark modal-close" id="closeQuizBtn"></i>
+      
+      <div id="quizContainer">
+        <!-- Question 1 -->
+        <div class="quiz-question active" id="q1">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What is your primary eye concern?</h3>
+          <p style="color: var(--text-light);">Select the symptom that bothers you the most.</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-next="q2_vision">Blurry or cloudy vision</div>
+            <div class="quiz-option" data-next="q2_pain">Eye pain, redness, or severe dryness</div>
+            <div class="quiz-option" data-next="result_routine">Just need a routine check-up for glasses/contacts</div>
+          </div>
+        </div>
+
+        <!-- Question 2 (Vision) -->
+        <div class="quiz-question" id="q2_vision">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">When is the blurriness worse?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" data-next="result_cataract">It's constantly blurry/cloudy, especially at night (glare from headlights)</div>
+            <div class="quiz-option" data-next="result_routine">Only when reading or looking at screens</div>
+            <div class="quiz-option" data-next="result_cornea">My vision is distorted, and my prescription changes constantly</div>
+          </div>
+        </div>
+
+        <!-- Question 2 (Pain) -->
+        <div class="quiz-question" id="q2_pain">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">How severe is the discomfort?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" data-next="result_emergency">Sudden, severe pain with vision loss (Seek immediate care!)</div>
+            <div class="quiz-option" data-next="result_cornea">Gritty feeling, constant dryness, or sensitivity to light</div>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="quiz-question" id="result_routine">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-glasses" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--primary-color);">General Eye Exam Recommended</h3>
+            <p style="margin-bottom: 1.5rem;">Based on your answers, a routine comprehensive eye exam should be your next step to update your prescription and check overall eye health.</p>
+            <a href="#contact" class="btn btn-primary" onclick="document.getElementById('quizModal').classList.remove('active');">Book General Checkup</a>
+          </div>
+        </div>
+
+        <div class="quiz-question" id="result_cataract">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-eye" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--primary-color);">Cataract Evaluation Recommended</h3>
+            <p style="margin-bottom: 1.5rem;">Your symptoms suggest you might be developing cataracts. We recommend booking a specialized evaluation with our team.</p>
+            <a href="#contact" class="btn btn-primary" onclick="document.getElementById('quizModal').classList.remove('active');">Book Cataract Consultation</a>
+          </div>
+        </div>
+
+        <div class="quiz-question" id="result_cornea">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-microscope" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--primary-color);">Advanced Cornea Consultation</h3>
+            <p style="margin-bottom: 1.5rem;">Your symptoms align with potential corneal issues (like Keratoconus or severe dry eye). Please book a consultation at our Advanced Cornea Centre.</p>
+            <a href="#contact" class="btn btn-primary" onclick="document.getElementById('quizModal').classList.remove('active');">Book Cornea Consultation</a>
+          </div>
+        </div>
+
+        <div class="quiz-question" id="result_emergency">
+          <div style="text-align: center;">
+            <i class="fa-solid fa-truck-medical" style="font-size: 3rem; color: var(--error); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--error);">Seek Immediate Medical Attention</h3>
+            <p style="margin-bottom: 1.5rem;">Sudden vision loss accompanied by severe pain is a medical emergency. Please call us immediately or visit the nearest emergency room.</p>
+            <a href="tel:09940814568" class="btn btn-primary" style="background-color: var(--error); border-color: var(--error);">Call Now: 099408 14568</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Sri Narayana Eye Hospital & Cornea Centre</h4>
+          <p>319, Perumal Malai Rd</p>
+          <p>Salem, Tamil Nadu 636004</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#highlights">Why Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 099408 14568</p>
+          <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> info@srinarayanaeye.com</p>
+          <div class="social-icons">
+            <a href="https://wa.me/919940814568" target="_blank" title="Contact us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sri Narayana Eye Hospital & Cornea Centre. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Widgets -->
+  <div class="floating-widgets" id="fabContainer">
+    <div class="fab-menu">
+      <a href="#contact" class="floating-btn floating-location" title="Our Location">
+        <i data-lucide="map-pin"></i>
+      </a>
+      <a href="https://wa.me/919940814568" target="_blank" class="floating-btn floating-whatsapp" title="Chat on WhatsApp">
+        <i data-lucide="message-circle"></i>
+      </a>
+    </div>
+    <button class="floating-btn fab-main" id="fabMainBtn" title="More Options">
+      <i data-lucide="arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script>
+    lucide.createIcons();
+    // FAB Toggle
+    const fabMainBtn = document.getElementById('fabMainBtn');
+    const fabContainer = document.getElementById('fabContainer');
+    if(fabMainBtn && fabContainer) {
+      fabMainBtn.addEventListener('click', () => {
+        fabContainer.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>

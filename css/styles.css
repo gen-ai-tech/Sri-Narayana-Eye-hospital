@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #6a01b5;        /* Deep purple */
+  --secondary-color: #9b34d6;      /* Lighter purple */
+  --accent-color: #f3e8ff;         /* Soft lavender background */
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-color: #ffffff;
+  --bg-secondary: #faf5ff;         /* Very light purple tint */
+  --white: #ffffff;
+  --error: #ef4444;
+  
+  --font-family: 'DM Sans', sans-serif;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+  --shadow-sm: 0 1px 2px 0 rgba(106, 1, 181, 0.07);
+  --shadow-md: 0 4px 6px -1px rgba(106, 1, 181, 0.12), 0 2px 4px -1px rgba(106, 1, 181, 0.08);
+  --shadow-lg: 0 10px 15px -3px rgba(106, 1, 181, 0.15), 0 4px 6px -2px rgba(106, 1, 181, 0.08);
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: clip;
+  position: relative;
+  width: 100%;
+  font-family: var(--font-family);
+  color: var(--text-dark);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.section-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
