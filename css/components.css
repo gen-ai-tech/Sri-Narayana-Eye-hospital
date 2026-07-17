@@ -591,6 +591,11 @@
 /* Tablets & Mobile — Nav becomes a dark right-slide drawer */
 @media (max-width: 768px) {
 
+  /* Make header static on mobile so it scrolls away */
+  .header {
+    position: static;
+  }
+
   /* Hide FAB on mobile in favor of bottom nav */
   .floating-widgets {
     display: none !important;
