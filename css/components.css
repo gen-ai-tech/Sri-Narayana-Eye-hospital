@@ -405,11 +405,11 @@
 }
 
 .floating-whatsapp {
-  background-color: #25d366;
+  background-color: var(--primary-color);
 }
 
 .floating-whatsapp:hover {
-  box-shadow: 0 15px 25px -5px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 15px 25px -5px rgba(106, 1, 181, 0.45);
 }
 
 .floating-location {
