@@ -624,7 +624,7 @@
     align-items: center;
     justify-content: flex-end;
     padding: 20px;
-    background: transparent;
+    background: #111A35;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -744,7 +744,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: max-content;
     padding: 0 32px;
     height: 52px;
     background: #18B6A4;     /* teal */
