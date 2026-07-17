@@ -520,9 +520,15 @@
 
 /* Drawer-specific elements hidden on desktop */
 .nav-drawer-header,
-.nav-drawer-links,
 .nav-drawer-cta {
   display: none;
+}
+
+/* On desktop, show the nav links horizontally */
+.nav-drawer-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .mobile-book-btn {
