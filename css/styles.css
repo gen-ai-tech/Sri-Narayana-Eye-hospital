@@ -24,10 +24,17 @@
   box-sizing: border-box;
 }
 
+/* Prevent ALL horizontal overflow */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
-  overflow-x: clip;
+  overflow-x: hidden;
   position: relative;
   width: 100%;
+  max-width: 100%;
   font-family: var(--font-family);
   color: var(--text-dark);
   background-color: var(--bg-color);

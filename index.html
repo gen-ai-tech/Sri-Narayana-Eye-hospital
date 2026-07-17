@@ -29,37 +29,6 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2qvjPjTmK_gN9Ayjjvd78zPd8Poi3hGSGmLmRFPlLg&s=10" alt="Logo" style="height: 60px; margin-right: 8px; mix-blend-mode: multiply;">
         Sri Narayana Eye Hospital
       </a>
-      
-      <!-- Mobile Nav Overlay Backdrop -->
-      <div class="nav-overlay" id="navOverlay"></div>
-
-      <nav class="nav-links" id="navLinks">
-        <!-- Drawer Header -->
-        <div class="nav-drawer-header">
-          <div class="nav-drawer-brand">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2qvjPjTmK_gN9Ayjjvd78zPd8Poi3hGSGmLmRFPlLg&s=10" alt="Logo" class="nav-drawer-logo">
-            <div>
-              <div class="nav-drawer-name">Sri Narayana</div>
-              <div class="nav-drawer-tagline">Eye Hospital &amp; Cornea Centre</div>
-            </div>
-          </div>
-          <button class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
-        </div>
-
-        <!-- Nav Items -->
-        <div class="nav-drawer-links">
-          <a href="#home" class="nav-drawer-item">Home</a>
-          <a href="#about" class="nav-drawer-item">About Us</a>
-          <a href="#services" class="nav-drawer-item">Services</a>
-          <a href="#highlights" class="nav-drawer-item">Why Us</a>
-          <a href="#contact" class="nav-drawer-item">Contact</a>
-        </div>
-
-        <!-- CTA -->
-        <div class="nav-drawer-cta">
-          <a href="#contact" class="btn nav-drawer-btn">Book Appointment</a>
-        </div>
-      </nav>
 
       <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
         <a href="#contact" class="btn btn-primary desktop-book-btn" style="white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.9rem;">Book Appointment</a>
@@ -359,6 +328,38 @@
       <i data-lucide="arrow-up"></i>
     </button>
   </div>
+
+  <!-- Mobile Nav Overlay (outside header to avoid backdrop-filter containing block issue) -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Mobile Nav Drawer -->
+  <nav class="nav-links" id="navLinks">
+    <!-- Drawer Header -->
+    <div class="nav-drawer-header">
+      <div class="nav-drawer-brand">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2qvjPjTmK_gN9Ayjjvd78zPd8Poi3hGSGmLmRFPlLg&s=10" alt="Logo" class="nav-drawer-logo">
+        <div>
+          <div class="nav-drawer-name">Sri Narayana</div>
+          <div class="nav-drawer-tagline">Eye Hospital &amp; Cornea Centre</div>
+        </div>
+      </div>
+      <button class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+
+    <!-- Nav Items -->
+    <div class="nav-drawer-links">
+      <a href="#home" class="nav-drawer-item">Home</a>
+      <a href="#about" class="nav-drawer-item">About Us</a>
+      <a href="#services" class="nav-drawer-item">Services</a>
+      <a href="#highlights" class="nav-drawer-item">Why Us</a>
+      <a href="#contact" class="nav-drawer-item">Contact</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="nav-drawer-cta">
+      <a href="#contact" class="btn nav-drawer-btn">Book Appointment</a>
+    </div>
+  </nav>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>

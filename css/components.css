@@ -519,38 +519,6 @@
   opacity: 1;
 }
 
-/* ─── Desktop nav stays as flex row ─── */
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.nav-links a {
-  color: var(--text-dark);
-  font-weight: 500;
-  position: relative;
-}
-
-.nav-links a:hover {
-  color: var(--primary-color);
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--secondary-color);
-  transition: var(--transition);
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
 /* Drawer-specific elements hidden on desktop */
 .nav-drawer-header,
 .nav-drawer-links,
@@ -828,6 +796,29 @@
   /* Center stats strip text on mobile */
   .hero-stats {
     justify-content: center;
+  }
+
+  /* Ensure no section bleeds beyond viewport */
+  section,
+  .hero,
+  .hero-content,
+  .hero-buttons,
+  .about-section,
+  .services-section {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Constrain hero content so it doesn't overflow on small screens */
+  .hero-content {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  /* Prevent container from being wider than screen */
+  .container {
+    max-width: 100vw;
+    box-sizing: border-box;
   }
 }
 
