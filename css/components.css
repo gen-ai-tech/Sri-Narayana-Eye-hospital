@@ -595,10 +595,10 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 82vw;
-    max-width: 360px;
+    width: 100vw;
+    max-width: 100vw;
     height: 100dvh;          /* full viewport height */
-    background: #0f172a;     /* dark navy like the reference */
+    background: #0f172a;     /* uniform dark navy */
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -624,7 +624,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 1.5rem;
-    background: #0f172a;       /* explicit — background is NOT inherited */
+    background: transparent;
     border-bottom: 1px solid rgba(255,255,255,0.12);
     position: sticky;
     top: 0;
@@ -684,9 +684,10 @@
   .nav-drawer-links {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
     flex: 1;
-    padding: 0.5rem 0;
-    background: #0f172a;       /* explicit dark background */
+    overflow-y: auto;
+    background: transparent;
   }
 
   .nav-drawer-item {
@@ -712,9 +713,11 @@
 
   /* ── CTA Button ── */
   .nav-drawer-cta {
-    display: block;
-    padding: 2rem 1.75rem 2.5rem;
-    background: #0f172a;       /* explicit dark background */
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    background: transparent;
+    position: sticky;
+    bottom: 0;
   }
 
   .nav-drawer-btn {
