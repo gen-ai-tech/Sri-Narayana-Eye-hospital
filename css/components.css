@@ -595,8 +595,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 80vw;
-    max-width: 340px;
+    width: 75vw;
+    max-width: 300px;
     height: 100dvh;          /* full viewport height */
     background: #0E1730;     /* uniform dark navy */
     flex-direction: column;
@@ -693,10 +693,10 @@
   .nav-drawer-item {
     display: flex;
     align-items: center;
-    height: 64px;
+    height: 56px;
     padding: 0 30px;
     color: #FFFFFF !important;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     border-bottom: 1px solid rgba(255,255,255,0.08);
     transition: background 0.3s, color 0.3s;
@@ -746,7 +746,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 32px;
     height: 56px;
     background: #18B6A4;     /* teal */
     color: #FFFFFF !important;
