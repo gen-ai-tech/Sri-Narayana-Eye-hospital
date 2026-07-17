@@ -422,6 +422,14 @@
   box-shadow: 0 15px 25px -5px rgba(106, 1, 181, 0.45);
 }
 
+.floating-call {
+  background-color: #6a01b5;
+}
+
+.floating-call:hover {
+  box-shadow: 0 15px 25px -5px rgba(106, 1, 181, 0.45);
+}
+
 /* Modal */
 .modal-overlay {
   position: fixed;
