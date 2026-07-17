@@ -1,19 +1,44 @@
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', () => {
   const mobileToggle = document.getElementById('mobileToggle');
-  const navLinks = document.getElementById('navLinks');
+  const navLinks     = document.getElementById('navLinks');
+  const navOverlay   = document.getElementById('navOverlay');
+  const navDrawerClose = document.getElementById('navDrawerClose');
+
+  function openNav() {
+    navLinks.classList.add('active');
+    if (navOverlay) navOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // lock background scroll
+    if (mobileToggle) {
+      mobileToggle.classList.remove('fa-bars');
+      mobileToggle.classList.add('fa-xmark');
+    }
+  }
+
+  function closeNav() {
+    navLinks.classList.remove('active');
+    if (navOverlay) navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    if (mobileToggle) {
+      mobileToggle.classList.remove('fa-xmark');
+      mobileToggle.classList.add('fa-bars');
+    }
+  }
 
   if (mobileToggle && navLinks) {
     mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      if (navLinks.classList.contains('active')) {
-        mobileToggle.classList.remove('fa-bars');
-        mobileToggle.classList.add('fa-xmark');
-      } else {
-        mobileToggle.classList.remove('fa-xmark');
-        mobileToggle.classList.add('fa-bars');
-      }
+      navLinks.classList.contains('active') ? closeNav() : openNav();
     });
+  }
+
+  // Close via the × button inside the drawer
+  if (navDrawerClose) {
+    navDrawerClose.addEventListener('click', closeNav);
+  }
+
+  // Close by clicking the overlay backdrop
+  if (navOverlay) {
+    navOverlay.addEventListener('click', closeNav);
   }
 
   // Smooth Scrolling for anchor links
@@ -26,11 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
           behavior: 'smooth'
         });
 
-        // Close mobile menu if open
-        if (window.innerWidth <= 768 && navLinks.classList.contains('active')) {
-          navLinks.classList.remove('active');
-          mobileToggle.classList.remove('fa-xmark');
-          mobileToggle.classList.add('fa-bars');
+        // Close mobile drawer if open
+        if (window.innerWidth <= 768 && navLinks && navLinks.classList.contains('active')) {
+          closeNav();
         }
       }
     });
