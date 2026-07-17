@@ -10,25 +10,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/styles.css?v=13">
+  <link rel="stylesheet" href="css/components.css?v=13">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <i class="fa-solid fa-eye" style="color: var(--secondary-color);"></i>
+      <a href="#home" class="logo" style="display: flex; align-items: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2qvjPjTmK_gN9Ayjjvd78zPd8Poi3hGSGmLmRFPlLg&s=10" alt="Logo" style="height: 60px; margin-right: 8px; mix-blend-mode: multiply;">
         Sri Narayana Eye Hospital
       </a>
+
+      <!-- Mobile Nav Overlay -->
+      <div class="nav-overlay" id="navOverlay"></div>
+
       <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html" style="color: var(--primary-color);">Services</a>
-        <a href="portal.html">Patient Portal</a>
-        <a href="contact.html">Contact</a>
+        <!-- Drawer Header -->
+        <div class="nav-drawer-header">
+          <button class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="nav-drawer-links">
+          <a href="#home" class="nav-drawer-item active">Home</a>
+          <a href="#about" class="nav-drawer-item">About Us</a>
+          <a href="#services" class="nav-drawer-item">Services</a>
+          <a href="#highlights" class="nav-drawer-item">Why Us</a>
+          <a href="#contact" class="nav-drawer-item">Contact</a>
+        </div>
+
+        <!-- CTA -->
+        <div class="nav-drawer-cta">
+          <a href="#contact" class="btn nav-drawer-btn">Book Appointment</a>
+        </div>
       </nav>
-      <i class="fa-solid fa-bars mobile-toggle" id="mobileToggle"></i>
+
+      <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn btn-primary desktop-book-btn" style="white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.9rem;">Book Appointment</a>
+        <i class="fa-solid fa-bars mobile-toggle" id="mobileToggle"></i>
+      </div>
+
+      <!-- Mobile Bottom Nav -->
+      <div class="mobile-bottom-nav">
+        <a href="#contact" class="bottom-nav-btn"><i class="fa-solid fa-location-dot"></i> Location</a>
+        <a href="https://wa.me/919940814568" class="bottom-nav-btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <a href="tel:09940814568" class="bottom-nav-btn"><i class="fa-solid fa-phone"></i> Call</a>
+      </div>
     </div>
   </header>
 

@@ -580,6 +580,11 @@
 /* Tablets & Mobile — Nav becomes a dark right-slide drawer */
 @media (max-width: 768px) {
 
+  /* Hide FAB on mobile in favor of bottom nav */
+  .floating-widgets {
+    display: none !important;
+  }
+
   /* ── Nav Overlay ── */
   .nav-overlay {
     display: block;
@@ -919,5 +924,58 @@
   .logo span,
   .logo {
     font-size: 0.8rem;
+  }
+}
+
+/* ── Mobile Bottom Navigation ── */
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px 12px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+    z-index: 999;
+    gap: 8px;
+  }
+
+  .bottom-nav-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: #18B6A4; /* Teal */
+    color: #ffffff !important;
+    padding: 12px 6px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+
+  .bottom-nav-btn i {
+    font-size: 1rem;
+  }
+
+  .bottom-nav-btn:hover {
+    background-color: #159c8c;
+    transform: translateY(-2px);
+  }
+  
+  /* Prevent content from hiding behind the bottom nav */
+  body {
+    padding-bottom: 70px;
   }
 }
