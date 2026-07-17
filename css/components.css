@@ -167,7 +167,7 @@
   background-color: var(--primary-color);
   color: var(--white);
   padding: 1rem 0;
-  text-align: center;
+  text-align: justify;
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -197,7 +197,7 @@
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   border: 1px solid var(--bg-secondary);
-  text-align: left;
+  text-align: justify;
 }
 
 .service-card:hover {
@@ -317,7 +317,7 @@
 }
 
 .footer-bottom {
-  text-align: center;
+  text-align: justify;
   padding-top: 2rem;
   border-top: 1px solid #374151;
   color: #9ca3af;
@@ -548,7 +548,7 @@
   .split-section,
   .contact-grid {
     grid-template-columns: 1fr !important;
-    text-align: center;
+    text-align: justify;
   }
 
   .hero-content {
@@ -560,7 +560,7 @@
   }
 
   .service-card {
-    text-align: center;
+    text-align: justify;
   }
 
   .service-icon {
@@ -580,7 +580,7 @@
   }
 
   #appointmentForm {
-    text-align: left;
+    text-align: justify;
   }
 
   /* Contact grid goes single column */
