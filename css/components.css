@@ -851,6 +851,10 @@
   }
 
   /* Ensure no section bleeds beyond viewport */
+  section {
+    padding: 2.5rem 0;
+  }
+  
   section,
   .hero,
   .hero-content,
