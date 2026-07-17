@@ -711,10 +711,10 @@
   .nav-drawer-item {
     display: flex;
     align-items: center;
-    height: 48px;
+    height: 42px;
     padding: 0 24px;
     color: #FFFFFF !important;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     transition: background 0.3s, color 0.3s;
