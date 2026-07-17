@@ -595,8 +595,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 75vw;
-    max-width: 280px;
+    width: 50vw;
+    max-width: 50vw;
     height: 100dvh;          /* full viewport height */
     background: #23272A;     /* charcoal grey */
     flex-direction: column;
