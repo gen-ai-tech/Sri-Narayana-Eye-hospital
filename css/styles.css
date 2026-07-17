@@ -48,6 +48,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
 }
 
+p {
+  text-align: justify;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -94,4 +98,5 @@ section {
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
