@@ -596,7 +596,7 @@
     top: 0;
     right: 0;
     width: 75vw;
-    max-width: 300px;
+    max-width: 280px;
     height: 100dvh;          /* full viewport height */
     background: #0E1730;     /* uniform dark navy */
     flex-direction: column;
@@ -618,14 +618,13 @@
     visibility: visible;
   }
 
-  /* ── Drawer Header (logo + close) ── */
+  /* ── Drawer Header (close only) ── */
   .nav-drawer-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 20px;
     background: #111A35;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -694,7 +693,7 @@
     display: flex;
     align-items: center;
     height: 56px;
-    padding: 0 30px;
+    padding: 0 24px;
     color: #FFFFFF !important;
     font-size: 18px;
     font-weight: 500;
@@ -736,6 +735,8 @@
 
   /* ── CTA Button ── */
   .nav-drawer-cta {
+    display: flex;
+    justify-content: center;
     padding: 24px;
     background: transparent;
     position: sticky;
@@ -746,10 +747,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
+    width: max-content;
     padding: 0 32px;
-    height: 56px;
+    height: 52px;
     background: #18B6A4;     /* teal */
     color: #FFFFFF !important;
     font-size: 18px;
